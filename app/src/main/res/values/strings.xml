@@ -13,6 +13,10 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="album_not">Album not found</string>
+    <string name="admob_app_id">ca-app-pub-9578696603065735~5331037012</string>
+    <string name="banner_home_footer">ca-app-pub-9578696603065735/9422734388</string>
+    <string name="interstitial_full_screen">ca-app-pub-9578696603065735/3801599129</string>
+
 
     <string name="storage_permission_denied">Permission to access storage was denied!\n We\'re not able to get your images!</string>
 </resources>

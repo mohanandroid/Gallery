@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.MobileAds;
 import com.rvm.main.MainActivity;
 import com.rvm.main.R;
 import com.rvm.main.util.PermissionUtils;

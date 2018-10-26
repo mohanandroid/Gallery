@@ -19,6 +19,8 @@ import android.widget.RelativeLayout;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.rvm.main.ImageModel;
 import com.rvm.main.R;
 import com.rvm.main.util.ScaleImageView;
@@ -30,7 +32,7 @@ public class SwipeGalleryActivity extends AppCompatActivity {
     private String mFolderName="";
     private int mSelectedPosition=0;
     public static ArrayList<ImageModel> al_images = new ArrayList<>();
-
+    AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +46,9 @@ public class SwipeGalleryActivity extends AppCompatActivity {
             Log.v("mFolderName--->",mFolderName);
             getFilePath();
         }
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
     }
 

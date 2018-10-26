@@ -11,6 +11,8 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.widget.GridView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.rvm.main.GalleryAdapter;
 import com.rvm.main.ImageModel;
 import com.rvm.main.R;
@@ -24,7 +26,7 @@ public class GalleryDisplayActivity extends AppCompatActivity {
     boolean boolean_folder;
     private RecyclerViewAdapter mRecyclerViewAdapter;
     RecyclerView recyclerView;
-
+    AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,9 @@ public class GalleryDisplayActivity extends AppCompatActivity {
             Log.v("mFolderName--->",mFolderName);
             getFilePath();
         }
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
     }
     public ArrayList<ImageModel> getFilePath(){
         al_images.clear();
