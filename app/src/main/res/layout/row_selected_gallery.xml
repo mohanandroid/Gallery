@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rvm.main.util.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/frameLayout_container"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:paddingBottom="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="0dp"
+        android:paddingTop="2dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_image"/>
+    </FrameLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:id="@+id/rl_select"-->
+        <!--android:alpha="0.5"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--</RelativeLayout>-->
+
+</com.rvm.main.util.SquareLayout>

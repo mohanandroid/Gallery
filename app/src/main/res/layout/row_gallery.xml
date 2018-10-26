@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rvm.main.util.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/frameLayout_container"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:paddingBottom="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="0dp"
+        android:paddingTop="2dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="#696969"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_folder_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dp"
+                android:text="What If Your Peers Decide Your Bonus"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_folder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-1dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dp"
+                android:text="new"
+                android:textColor="#ffffff"
+                android:textSize="14sp"  />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </FrameLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:id="@+id/rl_select"-->
+        <!--android:alpha="0.5"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--</RelativeLayout>-->
+
+</com.rvm.main.util.SquareLayout>

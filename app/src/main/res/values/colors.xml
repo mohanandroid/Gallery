@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="accent_white">#FFFFFF</color>
+
+    <color name="md_light_cards">@color/md_white_1000</color>
+    <color name="md_light_dialogs">@color/md_white_1000</color>
+
+
+
+
+    <color name="md_white_1000">#FFFFFF</color>
+    <color name="md_yellow_100">#FFF9C4</color>
+</resources>

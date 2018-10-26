@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Gallery</string>
+    <string name="action_settings">Settings</string>
+    <string name="retry">Retry</string>
+
+    <string name="error_drm_not_supported">Protected content is supported on Android 4.3 and later</string>
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+    <string name="error_drm_unknown">An unknown DRM error occurred</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="album_not">Album not found</string>
+
+    <string name="storage_permission_denied">Permission to access storage was denied!\n We\'re not able to get your images!</string>
+</resources>
