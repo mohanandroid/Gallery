@@ -81,6 +81,7 @@ public View getView(final int position, View convertView, ViewGroup parent) {
                 Intent intentGalleryDisplay=new Intent(context, GalleryDisplayActivity.class);
                 intentGalleryDisplay.putExtra("FOLDER_NAME",folderName);
                 context.startActivity(intentGalleryDisplay);
+                Log.d("mFolderName--->",folderName);
 
             }
         });

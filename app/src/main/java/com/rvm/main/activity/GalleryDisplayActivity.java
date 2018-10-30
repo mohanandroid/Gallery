@@ -36,8 +36,9 @@ public class GalleryDisplayActivity extends AppCompatActivity {
         recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
         if(getIntent().getStringExtra("FOLDER_NAME")!=null){
             mFolderName=getIntent().getStringExtra("FOLDER_NAME").toLowerCase();
-            Log.v("mFolderName--->",mFolderName);
-            getFilePath();
+            this.setTitle(mFolderName);
+            Log.d("mFolderName--->",mFolderName);
+
         }
         mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -101,5 +102,15 @@ public class GalleryDisplayActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        //Log.d("mFolderName onResume--->",mFolderName);
+        if(mFolderName!=null&&mFolderName.length()>0){
+            getFilePath();
+        }
+
     }
 }
